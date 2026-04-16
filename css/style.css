@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-ciano: #41C6C4;
+    --cor-azul: #13969F;
+    --cor-turquesa: #459796;
+    --cor-azul-bebe: #99D1D5;
+    --cor-branco: #FFFFFF;
+    --cor-azul-escuro: #206F74;
+    --fonte-texto: Arial, Helvetica, sans-serif;
+}
