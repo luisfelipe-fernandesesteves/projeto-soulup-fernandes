@@ -1,1 +1,35 @@
 @import url("style.css");
+
+/*main*/
+/*titulo*/
+#section__titulo {
+    font-family: var(--fonte-texto);
+    background-image: linear-gradient(to right, var(--cor-azul), var(--cor-azul-bebe));
+    -webkit-background-clip: text; /* recorta o fundo para o tamanho do texto*/
+    -webkit-text-fill-color: transparent; /*deixa o texto transparente para mostrar o fundo*/
+}
+
+
+#title__background1 {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 25px;
+    background-color: #99D1D5;
+    border-radius: 50px;
+    width: 320px;
+    z-index: 1;
+    height: 45px;
+    margin: 30px 0px 10px 30px;
+}
+#title__background2 {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 25px;
+    background: linear-gradient(to right, #F0FFFF);
+    border: 1px solid #99D1D5;
+    border-radius: 50px;
+    width: 250px;
+    z-index: 1;
+    height: 45px;
+    margin: 0px 0px 0px -25px;
+}
