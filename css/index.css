@@ -1,9 +1,11 @@
 @import url("style.css");
 
 /*main*/
+html {
+    font-family: var(--fonte-texto);
+}
 /*titulo*/
 .section__titulo {
-    font-family: var(--fonte-texto);
     background-image: linear-gradient(to right, var(--cor-azul), var(--cor-azul-bebe));
     -webkit-background-clip: text; /* recorta o fundo para o tamanho do texto*/
     -webkit-text-fill-color: transparent; /*deixa o texto transparente para mostrar o fundo*/
@@ -15,7 +17,6 @@
     background-color: #99D1D5;
     border-radius: 50px;
     width: 320px;
-    z-index: 1;
     height: 45px;
     margin: 30px 0px 10px 30px;
 }
@@ -27,7 +28,6 @@
     border: 1px solid #99D1D5;
     border-radius: 50px;
     width: 250px;
-    z-index: 1;
     height: 45px;
     margin: 0px 0px 0px -25px;
 }
@@ -40,7 +40,6 @@
 
 /*p*/
 .section__p, .section__p2 {
-    font-family: var(--fonte-texto);
     color: var(--cor-azul-escuro);
     margin: 0 0 15px 0;
     word-wrap: break-word;
@@ -89,7 +88,6 @@
     align-items: center;
     margin-top: 200px;
     color: var(--cor-azul);
-    font-family: var(--fonte-texto);
 }
 
 @media (max-width: 480px) /*mobile*/{
