@@ -82,6 +82,16 @@
     margin: 70px;
 }
 
+/*footer*/
+#footer__p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    color: var(--cor-azul);
+    font-family: var(--fonte-texto);
+}
+
 @media (max-width: 480px) /*mobile*/{
     #section__titulo {
     font-size: 20px;
