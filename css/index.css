@@ -1,129 +1,98 @@
 @import url("style.css");
 
-/*main*/
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: var(--fonte-texto);
-}
-/*titulo*/
-.section__titulo {
-    background-image: linear-gradient(to right, var(--cor-azul), var(--cor-azul-bebe));
-    -webkit-background-clip: text; /* recorta o fundo para o tamanho do texto*/
-    -webkit-text-fill-color: transparent; /*deixa o texto transparente para mostrar o fundo*/
-}
-#titulo__background1 {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 25px;
-    background-color: #99D1D5;
-    border-radius: 50px;
-    width: 320px;
-    height: 45px;
-    margin: 30px 0px 10px 30px;
-}
-#titulo__background2 {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 25px;
-    background: linear-gradient(to right, #F0FFFF);
-    border: 1px solid #99D1D5;
-    border-radius: 50px;
-    width: 250px;
-    height: 45px;
-    margin: 0px 0px 0px -25px;
-}
-.section__titulo2 {
-    font-family: var(--fonte-texto);
-    color: var(--cor-branco);
-    font-size: 45px;
-    margin: 0 0 15px 0;
+    background: var(--cor-plano-de-fundo);
 }
 
-/*p*/
-.section__p, .section__p2 {
-    color: var(--cor-azul-escuro);
-    margin: 0 0 15px 0;
-    word-wrap: break-word;
-    width: 80%;
-}
-
-.section__p {
-    margin: 15px 0 0 35px;
-}
-.section__p2 {
-    color: var(--cor-branco);
+/* container 1, hero*/
+.container__1 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 100px ;
+}
+
+/* texto */
+.hero__text-container {
+    width: 45%;
+}
+
+.hero__title span {
+    display: block;
+}
+
+.title__hero, .title__hero2 {
+    line-height: 120%;
+    font-size: 50px;
+}
+
+.title__hero { 
+    color: var(--cor-azul-escuro); 
+}
+
+.title__hero2 { 
+    color: var(--cor-ciano-2); 
+}
+
+.hero__p {
     font-size: 20px;
+    color: var(--cor-azul-escuro);
+    margin-top: 20px;
 }
 
-/*img*/
-.div__container {
-    margin-top: 30px;
-    background: linear-gradient(to right, var(--cor-azul-bebe), var(--cor-azul));
+/* imagens */
+#hero__img {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 380px;
-    padding: 0 50px;
-    gap: 20px;
-}
-.containter__texto {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-right: 250px;
 }
-#img__oceano {
-    width: 300px;
+
+#img__celular {
+    position: relative;
+    width: 450px;
     height: auto;
-    border-radius: 15px;
-    transform: rotate(270deg);
-    margin: 70px;
+}
+
+/* container 2 */
+#container__2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: -50px 5% 50px 5%; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.features__item {
+    text-align: center;
+    width: 22%;
+}
+
+.hero__title2 {
+    font-size: 18px;
+    color: var(--cor-azul-escuro);
+    margin-bottom: 10px;
+}
+
+.hero__p2 {
+    font-size: 14px;
+    color: #666;
 }
 
 /*footer*/
 #footer__p {
-    display: flex;
+    color: var(--cor-azul-escuro);
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    color: var(--cor-azul);
-}
-
-@media (max-width: 480px) /*mobile*/{
-    #section__titulo {
-    font-size: 20px;
-}
-    .titulo__background1 {
-        width: 220px;
-        height: 43px;
-}
-    .titulo__background2 {
-        width: 176px;
-        height: 43px;
-    }
-    .div__container {
-        height: auto;
-        min-height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #img__oceano {
-        width: 250px;
-        margin-top: 0px;
-    }
-    .section__titulo2 {
-        margin-top: -100px;
-        font-size: 40px;
-    }
-    .section__p, .section__p2 {
-        font-size: 16px;
-    }
-    .section__p2 {
-        width: 100%;
-    }
-    #footer__p {
-        margin-top: 105px;
-    }
 }
