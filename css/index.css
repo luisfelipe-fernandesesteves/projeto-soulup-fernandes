@@ -16,8 +16,8 @@ html {
 .container__1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 100px ;
+    justify-content: space-around;
+    margin-left: 60px;
 }
 
 /* texto */
@@ -49,16 +49,9 @@ html {
 }
 
 /* imagens */
-#hero__img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 250px;
-}
 
 #img__celular {
-    position: relative;
+    display: flex;
     width: 450px;
     height: auto;
 }

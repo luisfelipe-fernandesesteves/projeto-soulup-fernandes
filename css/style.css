@@ -92,7 +92,7 @@
     }
     #img__logotipo {
         padding: 0;
-        margin-bottom: 15px;
+        margin-bottom: 40px;
         width: 150px;
     }
     .nav__container {
@@ -103,7 +103,7 @@
         gap: 20px;
     }
     .nav__a, .nav__a--ativo {
-        font-size: 14px;
+        font-size: 1rem;
         padding: 5px;
         margin: 0;
         top: 0;
@@ -122,7 +122,7 @@
         flex-direction: column;
     }
     #img__logotipo {
-        margin-top: 20px; 
+        margin-bottom: 10px;
         width: 110px;
     }
 
@@ -133,7 +133,7 @@
     }
 
     .nav__a, .nav__a--ativo {
-        font-size: 12px; 
+        font-size: 0.8rem; 
         white-space: nowrap;
         margin-top: 20px;
         top: 0;
@@ -142,4 +142,13 @@
         bottom: 0px;
         top: auto;
     }
+
+@media (max-width: 360px) {
+    .nav__a, .nav__a--ativo {
+        font-size: 0.6em; 
+        white-space: nowrap;
+        margin-top: 20px;
+        top: 0;
+    }
+}
 }
