@@ -1,1 +1,69 @@
 @import url("style.css");
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: linear-gradient(to right, var(--cor-azul-bebe), var(--cor-azul), var(--cor-ciano));
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+.faq{
+display:flex;
+margin:40px;
+min-height:600px;
+}
+
+.faq-left{
+width:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.faq-left img{
+width:90%;
+max-height:100%;
+object-fit:contain;
+}
+
+.faq-right{
+width:50%;
+background:#efefef;
+padding:60px;
+}
+
+.faq__titulo{
+color:#1aa7a1;
+font-size:50px;
+margin-bottom:25px;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+padding:15px 0;
+border-bottom:1px solid #ccc;
+font-size: large;
+}
+
+.item span{
+color:#1aa7a1;
+font-size:25px;
+}
+
+.duvida{
+margin-top:25px;
+font-size: 30px;
+color:#1aa7a1;
+}
+
+.btn-faq{
+margin-top:8px;
+background:#1aa7a1;
+color:white;
+border:none;
+font-size: large;
+padding:10px 25px;
+border-radius:20px;
+cursor:pointer;
+}
