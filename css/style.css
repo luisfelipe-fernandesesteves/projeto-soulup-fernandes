@@ -43,7 +43,7 @@
     margin: 10px 0; 
 }
 
-.nav__a, .nav__a--ativo {
+.nav__btn, .nav__btn--ativo {
     position: relative; 
     text-decoration: none;
     color: var(--cor-branco);
@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-.nav__a::after { 
+.nav__btn::after { 
     content: ''; /*elemento fantasma*/
     position: absolute; 
     left: 0px;
@@ -66,7 +66,7 @@
     transition: transform 0.3s ease;
 }
 
-.nav__a--ativo::after {
+.nav__btn--ativo::after {
     transform: scaleX(1); /* antém a linha sempre visível */
     content: '';
     position: absolute; 
@@ -77,7 +77,7 @@
     background-color: var(--cor-branco);
 }
 
-.nav__a:hover::after {
+.nav__btn:hover::after {
     transform: scaleX(1); /*a linha aparece*/
 }
 
@@ -102,13 +102,13 @@
         padding: 0;
         gap: 20px;
     }
-    .nav__a, .nav__a--ativo {
+    .nav__btn, .nav__btn--ativo {
         font-size: 1rem;
         padding: 5px;
         margin: 0;
         top: 0;
     }
-    .nav__a::after, .nav__a--ativo::after { 
+    .nav__btn::after, .nav__btn--ativo::after { 
         bottom: 0px;
         top: auto;
     }
@@ -132,19 +132,19 @@
         gap: 10px;
     }
 
-    .nav__a, .nav__a--ativo {
+    .nav__btn, .nav__btn--ativo {
         font-size: 0.8rem; 
         white-space: nowrap;
         margin-top: 20px;
         top: 0;
     }
-    .nav__a::after, .nav__a--ativo::after { 
+    .nav__btn::after, .nav__btn--ativo::after { 
         bottom: 0px;
         top: auto;
     }
 
 @media (max-width: 360px) {
-    .nav__a, .nav__a--ativo {
+    .nav__btn, .nav__btn--ativo {
         font-size: 0.6em; 
         white-space: nowrap;
         margin-top: 20px;

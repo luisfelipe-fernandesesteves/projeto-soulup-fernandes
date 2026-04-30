@@ -12,8 +12,8 @@ html {
     background: var(--cor-plano-de-fundo);
 }
 
-/* container 1, hero*/
-.container__1 {
+/* container 1*/
+.hero__container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -74,14 +74,34 @@ html {
 
 .hero__title2 {
     font-size: 18px;
-    color: var(--cor-azul-escuro);
+    color: var(--cor-azul);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .hero__p2 {
     font-size: 14px;
-    color: #666;
+    color: var(--cor-azul-escuro);
+    border-right: 1px solid #6666662c;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.features__item:last-child .hero__p2  /*pseudo-seletor seleciona o ultimo item do features__item e remove o estilo da borda*/{
+    border-right: none;
+}
+
+card__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--cor-azul);
+    color: white;
+    line-height: 0; /* Às vezes o line-height do parágrafo empurra o ícone */
+}
+
 
 /*footer*/
 #footer__p {
