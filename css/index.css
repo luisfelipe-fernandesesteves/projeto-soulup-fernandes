@@ -20,67 +20,70 @@ html {
     margin-left: 60px;
 }
 
-/* texto */
-.hero__text-container {
+/* títulos e textos  */
+.hero__content {
     width: 45%;
 }
 
-.hero__title span {
-    display: block;
+.hero__title {
+    color: var(--cor-azul-escuro);
 }
 
-.title__hero, .title__hero2 {
+.hero__title, .hero__title--highlight {
     line-height: 120%;
     font-size: 50px;
 }
 
-.title__hero { 
-    color: var(--cor-azul-escuro); 
-}
-
-.title__hero2 { 
+.hero__title--highlight { 
     color: var(--cor-ciano-2); 
+    display: block;
 }
 
-.hero__p {
+.hero__description {
     font-size: 20px;
     color: var(--cor-azul-escuro);
     margin-top: 20px;
 }
 
+.hero__subtitle {
+    color: var(--cor-azul);
+    font-size: 30px;
+    padding-top: 15px;
+}
+
 /* imagens */
 
-#img__celular {
+#hero__mockup {
     display: flex;
-    width: 450px;
+    width: 500px;
     height: auto;
 }
 
 /* container 2 */
-#container__2 {
+.features__container {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    margin: -50px 5% 50px 5%; 
+    margin: -20px 5% 50px 5%; 
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.features__item {
+.features__card {
     text-align: center;
     width: 22%;
 }
 
-.hero__title2 {
-    font-size: 18px;
+.features__card-title {
+    font-size: 22px;
     color: var(--cor-azul);
     margin-bottom: 10px;
     text-align: center;
 }
 
-.hero__p2 {
-    font-size: 14px;
+.features__card-text {
+    font-size: 16px;
     color: var(--cor-azul-escuro);
     border-right: 1px solid #6666662c;
     padding-right: 20px;
@@ -88,11 +91,11 @@ html {
     padding-bottom: 10px;
 }
 
-.features__item:last-child .hero__p2  /*pseudo-seletor seleciona o ultimo item do features__item e remove o estilo da borda*/{
+.features__card:last-child .features__card-text  /*pseudo-seletor seleciona o ultimo item do features__item e remove o estilo da borda*/{
     border-right: none;
 }
 
-card__icon {
+.card__icon {
     display: flex;
     width: 40px;
     height: 40px;
@@ -104,7 +107,7 @@ card__icon {
 
 
 /*footer*/
-#footer__p {
+.footer__copyright {
     color: var(--cor-azul-escuro);
     text-align: center;
     justify-content: center;

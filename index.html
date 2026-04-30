@@ -12,73 +12,75 @@
 </head>
 
 <body>
-    <header class="header__cabecalho">
-        <img src="./img/logo-soulup.webp" alt="Logotipo SoulUp" id="img__logotipo">
+    <header class="header__container">
+        <img src="./img/logo-soulup.webp" alt="Logotipo SoulUp" class="header__logo">
         <nav class="nav__container">
-            <a href="./index.html" class="nav__btn--ativo">Página Inicial</a>
-            <a href="./paginas/pagina-quem-somos.html" class="nav__btn">Quem somos?</a>
-            <a href="./paginas/pagina-sobre.html" class="nav__btn">Sobre</a>
-            <a href="./paginas/pagina-faq.html" class="nav__btn">FAQ</a>
-            <a href="./paginas/pagina-contato.html" class="nav__btn">Contato</a>
+            <a href="./index.html" class="nav__link nav__link--active">Página Inicial</a>
+            <a href="./paginas/pagina-quem-somos.html" class="nav__link">Quem somos?</a>
+            <a href="./paginas/pagina-sobre.html" class="nav__link">Sobre</a>
+            <a href="./paginas/pagina-faq.html" class="nav__link">FAQ</a>
+            <a href="./paginas/pagina-contato.html" class="nav__link">Contato</a>
         </nav>
     </header>
     <main>
-        <section class="section__hero">
+        <section class="hero">
             <div class="hero__container">
-                <div class="hero__text-container">
-                    <h1 class="hero__title">
-                        <span class="title__hero">A primeira</span>
-                        <span class="title__hero2">rede social de</span>
-                        <span class="title__hero2">impacto sustentável</span>
-                        <span class="title__hero">do planeta.</span>
+                <div class="hero__content">
+                    <h1 class="hero__title">A primeira
+                        <span class="hero__title--highlight">rede social de</span>
+                        <span class="hero__title--highlight">impacto sustentável</span>
+                        do planeta.
                     </h1>
-                    <p class="hero__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sint
-                        dignissimos et architecto reiciendis laboriosam qui minus iusto quas amet ipsam, illum ad,
-                        illo quia, vero nesciunt! Excepturi, ratione repudiandae dignissimos corrupti veritatis
-                        tenetur voluptates deleniti adipisci repellat, nostrum exercitationem vero qui, eum dolorem
-                        fugit necessitatibus! Quia ut mollitia deleniti, repudiandae praesentium voluptate
-                        doloribus, nisi consequatur rerum obcaecati sint natus?</p>
+                    <p class="hero__description">A Soul Up não é apenas um aplicativo; é uma revolução no modo como
+                        interagimos com o planeta. Nossa plataforma utiliza tecnologia de ponta para validar e
+                        recompensar suas atitudes sustentáveis no mundo físico. Através de um sistema integrado de
+                        IA, transformamos cada quilômetro caminhado, cada quilo de material
+                        reciclado e cada Watt de energia solar gerada em pontos que se transformam em economia real para
+                        o
+                        seu bolso.</p>
+                    <h2 class="hero__subtitle">Como funciona?</h2>
+                    <p class="hero__description">O fluxo é simples e transparente: você age no mundo real, registra sua
+                        ação através de fotos ou
+                        vídeos, e nossa IA valida a autenticidade do registro em segundos. Seus pontos são acumulados em
+                        uma carteira digital, permitindo que você suba no ranking global e desbloqueie benefícios
+                        exclusivos.</p>
                 </div>
-                <img src="./img/img-celular.webp" alt="Celular com interface meramente ilustrativa" id="img__celular">
-            </div>
-            <div id="container__2">
-                <article class="features__item">
-                    <div class="card__container">
-                        <h2 class="hero__title2"><i class="fa-solid fa-seedling"></i></i> Sustentabilidade</h2>
-                        <p class="hero__p2">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                            Minima perspiciatis officiis </p>
-                    </div>
-                </article>
-                <article class="features__item">
-                    <div class="card__container">
-                        <h2 class="hero__title2"><i class="fa-solid fa-microchip"></i></i> Tecnologia</h2>
-                        <p class="hero__p2">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                            Minima perspiciatis officiis </p>
-                    </div>
-                </article>
-                <article class="features__item">
-                <div class="card__container">
-                    <h2 class="hero__title2"><i class="fa-solid fa-user"></i> Conexões</h2>
-                    <p class="hero__p2">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Minima perspiciatis officiis</p>
-                </div>
-                </article>
-                <article class="features__item">
-                    <div class="card__container">
-                        <h2 class="hero__title2"><i class="fa-solid fa-piggy-bank"></i> Recompensa</h2>
-                        <p class="hero__p2">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                            Minima perspiciatis officiis </p>
-                    </div>
-                </article>
+                <img src="./img/img-celular.webp" alt="Celular com interface meramente ilustrativa" id="hero__mockup">
             </div>
         </section>
-
+        <section class="features__container">
+            <article class="features__card">
+                <h3 class="features__card-title"><i class="fa-solid fa-seedling"></i></i> Sustentabilidade</h3>
+                <p class="features__card-text">Transforme ações eco-friendly em lucro real. Seja caminhando ou gerando
+                    energia solar, você reduz sua pegada de carbono enquanto ganha recompensas. Além disso,
+                    otimizamos sua reciclagem com rotas inteligentes até centros parceiros próximos de você.</p>
+            </article>
+            <article class="features__card">
+                <h3 class="features__card-title"><i class="fa-solid fa-microchip"></i></i> Tecnologia</h3>
+                <p class="features__card-text">Nossa infraestrutura utiliza IA avançada e arquitetura escalável para
+                    milhões de usuários. Com reconhecimento de imagem e filtros antifraude, garantimos
+                    validações precisas, integrada no próprio aplicativo para validação automática e segura.</p>
+            </article>
+            <article class="features__card">
+                <h3 class="features__card-title"><i class="fa-solid fa-user"></i> Conexões</h3>
+                <p class="features__card-text">A Soul une o mundo físico ao digital de forma única. Criamos uma rede
+                    global
+                    de usuários focados no mesmo
+                    objetivo. Através do seu Avatar Único, que evolui conforme seu progresso, você participa de
+                    uma competição saudável e transparente com ranking ativo. </p>
+            </article>
+            <article class="features__card">
+                <h3 class="features__card-title"><i class="fa-solid fa-piggy-bank"></i> Recompensa</h3>
+                <p class="features__card-text">Aqui, suas boas ações viram pontos ECOA, possíveis de troca para
+                    benefícios
+                    reais. Através da nossa gamificação você pode evoluir dentro do app
+                    e colaborar com nosso mundo. O usuário top #1 do nosso ranking global, garante a conta
+                    integralmente paga por nós. </p>
+            </article>
+        </section>
+    </main>
         <footer>
-            <p id="footer__p">&copy; 2026 SOUL UP. Todos os direitos reservados.</p>
+            <p class="footer__copyright">&copy; 2026 SOUL UP. Todos os direitos reservados.</p>
         </footer>
 </body>
 
