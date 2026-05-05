@@ -43,8 +43,14 @@ body {
 }
 
 .header__logo {
+  flex-shrink: 0;
   width: 110px;
-  margin: 10px 0;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
 }
 
 /*Navegação*/
@@ -76,14 +82,15 @@ body {
   transform: scaleX(1);
 }
 
-  .nav__login {
+.nav-btn__login {
     background-color: var(--cor-branco);
     color: var(--cor-azul);
     font-family: var(--fonte-texto);
     text-align: center;
-    border-radius: 10px;
-    width: 60px;
+    border-radius: 20px;
+    padding: 3px 25px;
     text-decoration: none;
+    margin-left: auto;
   }
 
 /*Responsividade*/
@@ -137,6 +144,7 @@ body {
   .header__logo {
     margin-bottom: 10px;
     width: 110px;
+    flex-shrink: 0;
   }
 
   .nav__container {
