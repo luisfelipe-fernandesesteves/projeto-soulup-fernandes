@@ -1,0 +1,34 @@
+@import url("style.css");
+
+/*Cadastro*/
+.login__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    /* Centraliza verticalmente*/
+    justify-content: flex-start;
+    min-height: 91.5vh;
+    width: 100%;
+}
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 40%;
+    height: 43vh;
+    border-radius: 10px;
+    
+}
+.form-cadastro__field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px;
+    
+}
+
+.form-cadastro__button {
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 10px;
+}
+

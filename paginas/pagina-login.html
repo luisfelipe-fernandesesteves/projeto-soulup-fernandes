@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css/pag-login.css">
+    <link rel="shortcut icon" href="../img/img-icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header__container">
+        <img src="../img/logo-soulup.webp" alt="Logotipo SoulUp" id="header__logo">
+        <nav class="nav__container">
+            <a href="../index.html" class="nav__link">Página Inicial</a>
+            <a href="./pagina-quem-somos.html" class="nav__link">Quem somos?</a>
+            <a href="./pagina-sobre.html" class="nav__link">Sobre</a>
+            <a href="./pagina-faq.html" class="nav__link nav__link--active">FAQ</a>
+            <a href="./pagina-contato.html" class="nav__link">Contato</a>
+            <a href="./pagina-login.html" class="nav__login">Login</a>
+        </nav>
+    </header>
+    <main>
+        <div class="login__container">
+        <fieldset class="form-cadastro">
+            <legend class="form-cadastro__title">Informações Pessoais</legend>
+            <div class="form-cadastro__field">
+                <label for="nome" class="form-cadastro__label">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-cadastro__input" placeholder="Nome Completo"
+                    required maxlength="120">
+                <label for="email" class="form-cadastro__label">Email:</label>
+                <input type="email" id="email" name="email" class="form-cadastro__input" placeholder="E-mail" required
+                    minlength="15" maxlength="200">
+                <label for="password" class="form-cadastro__label">Senha:</label>
+                <input type="password" id="password" name="password" class="form-cadastro__input"
+                    placeholder="Digite sua senha" required minlength="8" maxlength="30">
+                <label for="birthday" class="form-cadastro__label">Data de Nascimento:</label>
+                <input type="date" id="birthday" name="birthday" class="form-cadastro__input form-cadastro__input--date"
+                    min="1900-01-01" max="2050-05-05" required>
+                <button type="submit" class="form-cadastro__button">Cadastrar</button>
+            </div>
+        </fieldset>
+        </div>
+    </main>
+</body>
+
+</html>

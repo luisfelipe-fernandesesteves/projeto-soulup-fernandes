@@ -8,7 +8,6 @@
 }
 
 html {
-    font-family: var(--fonte-texto);
     background: var(--cor-plano-de-fundo);
 }
 
@@ -18,6 +17,7 @@ html {
     align-items: center;
     justify-content: space-around;
     margin-left: 60px;
+    min-height: 80vh; /* Adicionado para garantir respiro vertical no hero */
 }
 
 /* títulos e textos  */
@@ -26,6 +26,7 @@ html {
 }
 
 .hero__title {
+    margin-top: 40px;
     color: var(--cor-azul-escuro);
 }
 
@@ -52,11 +53,11 @@ html {
 }
 
 /* imagens */
-
 #hero__mockup {
-    display: flex;
-    width: 500px;
+    display: block; 
+    width: 600px;
     height: auto;
+    object-fit: contain;
 }
 
 /* container 2 */
@@ -64,7 +65,7 @@ html {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    margin: -20px 5% 50px 5%; 
+    margin: 35px 5% 50px 5%; 
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
@@ -73,42 +74,45 @@ html {
 .features__card {
     text-align: center;
     width: 22%;
+    display: flex; /* Adicionado para alinhar ícone, título e texto verticalmente */
+    flex-direction: column;
+    align-items: center;
 }
 
 .features__card-title {
     font-size: 22px;
     color: var(--cor-azul);
     margin-bottom: 10px;
-    text-align: center;
+    margin-top: 15px; /* Adicionado para separar o título do ícone acima */
 }
 
 .features__card-text {
     font-size: 16px;
     color: var(--cor-azul-escuro);
     border-right: 1px solid #6666662c;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px; /* Simplificado o padding */
+    width: 100%; /* Garante que o texto ocupe o card todo */
 }
 
-.features__card:last-child .features__card-text  /*pseudo-seletor seleciona o ultimo item do features__item e remove o estilo da borda*/{
+.features__card:last-child .features__card-text {
     border-right: none;
 }
 
 .card__icon {
     display: flex;
-    width: 40px;
-    height: 40px;
+    align-items: center;     /* Centraliza o conteúdo (ícone/emoji) verticalmente */
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    width: 50px;             /* Aumentado levemente para melhor respiro */
+    height: 50px;
     border-radius: 50%;
     background-color: var(--cor-azul);
     color: white;
-    line-height: 0; /* Às vezes o line-height do parágrafo empurra o ícone */
+    flex-shrink: 0;          /* Impede que o círculo amasse se o texto for grande */
 }
-
 
 /*footer*/
 .footer__copyright {
     color: var(--cor-azul-escuro);
     text-align: center;
-    justify-content: center;
+    padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
 }
