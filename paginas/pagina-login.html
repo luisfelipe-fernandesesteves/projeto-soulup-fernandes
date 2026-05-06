@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/pag-login.css">
+    <link rel="shortcut icon" href="../img/img-icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header__container">
+        <img src="../img/logo-soulup.webp" alt="SoulUp" class="header__logo">
+        <nav class="nav__container">
+            <div class="nav__menu">
+                <a href="../index.html" class="nav__link">Página Inicial</a>
+                <a href="./pagina-quem-somos.html" class="nav__link">Quem somos?</a>
+                <a href="./pagina-sobre.html" class="nav__link">Sobre</a>
+                <a href="./pagina-faq.html" class="nav__link nav__link">FAQ</a>
+                <a href="./pagina-contato.html" class="nav__link">Contato</a>
+            </div>
+            <a href="./pagina-login.html" class="nav-btn__login">Login</a>
+        </nav>
+    </header>
+    <main>
+        <div class="login__page">
+            <div class="login__container">
+                <div class="login__content-wrapper">
+                    <h1 class="login__title">Login</h1>
+                    <form action="#" method="POST" class="form-login">
+                    <fieldset class="form-login__field">
+                            <!--inputs e labels-->
+                            <label for="nome" class="form-login__label">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-login__input"
+                                placeholder="Nome Completo" required maxlength="120">
+                            <label for="email" class="form-login__label">Email</label>
+                            <input type="email" id="email" name="email" class="form-login__input"
+                                placeholder="E-mail" required minlength="5" maxlength="200">
+                            <label for="password" class="form-login__label">Senha</label>
+                            <input type="password" id="password" name="password" class="form-login__input"
+                                placeholder="Digite sua senha" required minlength="8" maxlength="30">
+                            <label for="birthday" class="form-login__label">Data de Nascimento</label>
+                            <input type="date" id="birthday" name="birthday"
+                                class="form-login__input form-login__input--date" min="1900-01-01"
+                                max="2050-05-05" required>
+                            <button type="submit" class="form-login__button">Login</button>
+                    </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="login-container__aside">
+                <h2 class="banner-content">
+                    <!-- fonte única -->
+                    <span class="banner-title">seu clique</span><br>
+                    <!-- fontes mistas -->
+                    <span class="banner-title">é</span>
+                    <span class="banner-title--highlight">digital,</span><br>
+                    <!-- fonte única -->
+                    <span class="banner-title">mas o impacto</span><br>
+                    <!-- fontes mistas -->
+                    <span class="banner-title">é</span>
+                    <span class="banner-title--highlight">real.</span>
+                </h2>
+                <div>
+                    <img src="../img/logo-soulup.webp" alt="Logotipo SoulUp" class="banner__logo-img">
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>
