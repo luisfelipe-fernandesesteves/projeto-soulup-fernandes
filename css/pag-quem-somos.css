@@ -9,7 +9,6 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
     background: linear-gradient(135deg, #1aa6a6, #7fd6d6, #ffffff);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
