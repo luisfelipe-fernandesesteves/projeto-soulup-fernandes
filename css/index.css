@@ -53,7 +53,7 @@ html {
 }
 
 /* imagens */
-#hero__mockup {
+.hero__mockup {
     display: block; 
     width: 600px;
     height: auto;
@@ -98,17 +98,6 @@ html {
     border-right: none;
 }
 
-.card__icon {
-    display: flex;
-    align-items: center;     /* Centraliza o conteúdo (ícone/emoji) verticalmente */
-    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
-    width: 50px;             /* Aumentado levemente para melhor respiro */
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--cor-azul);
-    color: white;
-    flex-shrink: 0;          /* Impede que o círculo amasse se o texto for grande */
-}
 
 /*footer*/
 .footer__copyright {
