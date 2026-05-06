@@ -4,36 +4,37 @@
     --fonte-serifada: 'Libre Caslon Text', serif;
 }
 html {
+    height: 100vh;
     background: linear-gradient(45deg, var(--cor-branco), var(--cor-azul-bebe))
 }
-/*Cadastro*/
+/*Login*/
 .login__container {
     flex: 1; 
     display: flex;
     flex-direction: row;
     align-items: center;    /* Centraliza verticalmente*/
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
 }
-.form-cadastro {
+.form-login {
     display: flex;
     flex-direction: column;
-    margin: 200px;
-    width: 50%;
-    height: 48.3vh;
-    border-radius: 10px;
-    border: 1px solid var(--cor-azul) ;
-    background-color: var(--cor-azul-bebe);
-    
+
 }
-.form-cadastro__field {
+.form-login__field {
     display: flex;
     flex-direction: column;
+    width: 350px;
+    max-width: 450px;
+    height: auto;
+    padding: 30px;
     gap: 10px;
-    margin: 15px;
-    
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--cor-azul-bebe);  
+
 }
-.form-cadastro__button {
+.form-login__button {
     background-color: var(--cor-azul);
     color: var(--cor-branco);
     text-align: center;
@@ -43,15 +44,16 @@ html {
     font-weight: 700;
     font-size: 15px;
     border: 0;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 /*container pai*/
-.login-page {
+.login__page {
     display: flex;
     width: 100%;
 }
 /*container da direita*/
 .login-container__aside {
+    height: 92vh;
     flex: 1;
     display: flex; 
     flex-direction: column; 
@@ -62,18 +64,24 @@ html {
     min-height: 80vh;
     box-sizing: border-box; /* padding não quebra a altura */
 }
+/*titulo*/
+.login__title {
+    text-align: center;
+    font-size: 30px;
+    color: var(--cor-azul);
+
+}
 /*Labels*/
-.form-cadastro__label {
+.form-login__label {
     color: var(--cor-azul-escuro);
     font-size: 20px;
 }
 /*Inputs*/
-.form-cadastro__input {
+.form-login__input {
     padding: 5px 20px;
     border-radius: 15px;
     border: 1px solid var(--cor-azul);
     background-color:aliceblue;
-    color: #757575;
 }
 /*conteúdo do banner*/
 .banner-content {
@@ -112,44 +120,24 @@ html {
     height: auto;
 }
 @media (max-width: 768px) { /*tablet*/
-
-    html {
-    background: linear-gradient(45deg, var(--cor-azul), var(--cor-azul-bebe));
-    height: 100;
-    }
-
-    .login-page {
-        flex-direction: column-reverse;
-    }
-    .login__container {
-        justify-content: center;
-        align-items: center;
-    }
-    .login__container, .login-container__aside {
-        width: 100%;
-        flex: none;
-    }
-
-    .form-cadastro {
-        margin: 20px;
-        width: 70%;
-    }
-
-    .banner-title--highlight, .banner-title {
-        font-size: 3rem;
-        padding-left: 5px;
-        line-height: 35px;
+    .login__page {
+        flex-direction: column-reverse; /* Banner em cima, Login embaixo (ou vice-versa) */
     }
 
     .login-container__aside {
-        min-height: auto;
-        padding: 20px 0 5px 20px;
-        background: none;
-    }
-    .banner-content {
-        margin-left: 13%;
-    }
-    .banner__logo-container, .banner__logo-img {
         display: none;
+    }
+
+    .login__container {
+        padding: 40px 20px;
+    }
+
+    .form-login__field {
+        width: 100%;
+        padding: 25px;
+    }
+    
+    .login__title {
+        font-size: 28px;
     }
 }
