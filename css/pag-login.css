@@ -47,6 +47,11 @@ html {
     margin-top: 20px;
     cursor: pointer;
 }
+.form-login__button:hover {
+    color: var(--cor-azul);
+    background-color: var(--cor-branco);
+    transition: 0.3s;
+}
 /*container pai*/
 .login__page {
     display: flex;
@@ -122,7 +127,8 @@ html {
 }
 /*modal*/
 .modal {
-    display: none; /*nao aparece, e remove os filhos*/
+    display: flex;
+    visibility: hidden;
     position: fixed; /*fixa o modal na tela*/
     z-index: 1000;
     left: 0; top: 0;
@@ -140,15 +146,28 @@ html {
     text-align: center;
     position: relative; /*permite o uso do position absolut na area definida */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(0.7); /* Começa menor */
+    transition: transform 0.4s ease-out;
 }
-.modal-title {
-    color: var(--cor-azul);
+.modal--active { /*ativacao pelo js*/
+    visibility: visible;
+    opacity: 1;
 }
+/* quando o modal ativar, o conteúdo cresce para o tamanho normal */
+.modal--active .modal-content {
+    transform: scale(1);
+}
+
 .close-button {
     position: absolute; /*posiciona o 'x' de forma livre*/
     right: 15px; top: 10px;
     cursor: pointer; /*muda o ponteiro*/
     font-size: 24px;
+    color: var(--cor-azul);
+}
+
+/*titulo*/
+.modal-title {
     color: var(--cor-azul);
 }
 
