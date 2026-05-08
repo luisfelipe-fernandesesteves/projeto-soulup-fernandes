@@ -4,7 +4,6 @@
     --fonte-serifada: 'Libre Caslon Text', serif;
 }
 html {
-    height: 100vh;
     background: linear-gradient(45deg, var(--cor-branco), var(--cor-azul-bebe))
 }
 /*Login*/
@@ -169,12 +168,11 @@ html {
 .modal-title {
     color: var(--cor-azul);
 }
+@media (max-width: 1300px) { /*desktop/
+ 
+}
 
 @media (max-width: 768px) { /*tablet*/
-    .login__page {
-        flex-direction: column-reverse; /* Banner em cima, Login embaixo (ou vice-versa) */
-    }
-
     .login-container__aside {
         display: none;
     }
@@ -190,5 +188,27 @@ html {
     
     .login__title {
         font-size: 28px;
+    }
+}
+@media (max-width: 480px) { /*celular*/
+    .login-container__aside {
+        display: none;
+    }
+
+    .login__container {
+        padding: 40px 20px;
+    }
+
+    .form-login__field {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .login__title {
+        font-size: 25px;
+    }
+    .form-login__label {
+        color: var(--cor-azul-escuro);
+        font-size: 16px;
     }
 }

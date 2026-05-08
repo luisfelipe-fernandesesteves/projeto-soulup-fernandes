@@ -38,7 +38,7 @@ form.addEventListener('submit', (event) => {  //Ao dar enter no botão, irá exe
     //Validação de idade (-14 não podem acessar o app)
 
     if (idade < 14) {
-        alterarTexto('modal-title', "Idade insuficiente");
+        alterarTexto('modal-title', "Idade inválida!");
         alterarTexto('modal-message', "Idade inserida inferior a permitida para acessar o aplicativo.");
         modal.classList.add('modal--active'); //altera visibilidade
         return;
