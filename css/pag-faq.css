@@ -57,6 +57,8 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    color: var(--cor-azul-escuro);
+    font-weight: 700;
 }
 
 
@@ -105,7 +107,7 @@ body {
     display: inline-block;
     margin-top: 8px;
     background: #1aa7a1;
-    color: var(--cor-branco)
+    color: var(--cor-branco);
     font-size: large;
     padding: 10px 25px;
     border-radius: 20px;
