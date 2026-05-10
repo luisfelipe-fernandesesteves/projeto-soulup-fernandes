@@ -28,10 +28,11 @@ Através de um sistema integrado de IA, transformamos cada quilometro caminhado,
 
 O desenvolvimento deste projeto foi realizado utilizando as seguintes ferramentas/tecnologias:
 
-* **Editor de Código:** Visual Studio Code
-* **Controlo de Versão:** Git & GitHub
-* **Hospedagem:** Vercel
-* **Front-end:** HTML, CSS e JavaScript
+* **Editor de Código:** Visual Studio Code <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="17" alt="vscode logo"  />
+* **Controlo de Versão:** Git & GitHub <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="17" alt="github logo"  /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="17" alt="git logo"  />
+* **Hospedagem:** Vercel <img src="https://skillicons.dev/icons?i=vercel" height="17" alt="vercel logo"  />
+* **Front-end:** HTML, CSS e JavaScript <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" height="17" alt="javascript logo"  />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="17" alt="html5 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="17" alt="css logo"  />
 
 ---
 
